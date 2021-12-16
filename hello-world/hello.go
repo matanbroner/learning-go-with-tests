@@ -7,5 +7,9 @@ func main() {
 }
 
 func Hello(name string) string {
-	return "Hello, " + name
+	if name == "" {
+		name = "World"
+	}
+	const englishPrefix = "Hello, "
+	return englishPrefix + name
 }
